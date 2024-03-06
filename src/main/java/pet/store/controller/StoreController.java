@@ -55,7 +55,8 @@ public class StoreController {
 			@RequestBody PetStoreCustomer petStoreCustomer) {
 		log.info("Creating customer {} for pet store with ID = {}", petStoreCustomer, petStoreId);
 		return petStoreService.saveCustomer(petStoreCustomer);
-	}
+	} 
+
 
 	@GetMapping()
 	public List<PetStoreData> retrieveAllPetStores() {
